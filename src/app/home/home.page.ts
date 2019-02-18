@@ -1,3 +1,4 @@
+import { Beer } from './../models/beer';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   name = 'world';
+  myFavoriteBeer = new Beer('1', 'malt\'s', '最高だ');
 }
