@@ -1,3 +1,4 @@
+import { UpperPipe } from './../../pipes/upper.pipe';
 import { HighlightDirective } from './../../directives/highlight.directive';
 import { IonicModule } from '@ionic/angular';
 import { BeerComponent } from './../../components/beer/beer.component';
@@ -7,7 +8,8 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     BeerComponent,
-    HighlightDirective
+    HighlightDirective,
+    UpperPipe
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     BeerComponent,
-    HighlightDirective
+    HighlightDirective,
+    UpperPipe
   ]
 })
 export class AppCommonModule { }
