@@ -16,4 +16,8 @@ export class BeerService {
   getBeers(): Beer[] {
     return this.beers;
   }
+
+  getBeer(id: string): Beer {
+    return this.beers.find(b => b.id === id);
+  }
 }

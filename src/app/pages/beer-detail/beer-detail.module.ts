@@ -1,3 +1,4 @@
+import { AppCommonModule } from './../../modules/app-common/app-common.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -16,6 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    AppCommonModule,
     CommonModule,
     FormsModule,
     IonicModule,
