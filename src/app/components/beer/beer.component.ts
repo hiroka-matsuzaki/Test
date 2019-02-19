@@ -15,6 +15,6 @@ export class BeerComponent implements OnInit {
   ngOnInit() {}
 
   onNice() {
-    this.beer.description += '(((ο(*ﾟ▽ﾟ*)ο)))';
+    this.beer.isNice = !this.beer.isNice;
   }
 }

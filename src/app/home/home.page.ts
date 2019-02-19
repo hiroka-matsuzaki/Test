@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   name = 'world';
-  myFavoriteBeer = new Beer('1', 'malt\'s', '最高だ');
+  myFavoriteBeer = new Beer('1', 'malt\'s', '最高だ', false);
 }
