@@ -1,3 +1,4 @@
+import { IonicModule } from '@ionic/angular';
 import { BeerComponent } from './../../components/beer/beer.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,7 +8,8 @@ import { CommonModule } from '@angular/common';
     BeerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
     BeerComponent
