@@ -1,12 +1,21 @@
+import { BeerService } from './../services/beer.service';
 import { Beer } from './../models/beer';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   name = 'world';
-  myFavoriteBeer = new Beer('1', 'malt\'s', '最高だ', false);
+  beers: Beer[];
+
+   constructor(
+    private beerService: BeerService
+  ) {}
+
+   ngOnInit() {
+    this.beers = this.beerService.getBeers();
+  }
 }

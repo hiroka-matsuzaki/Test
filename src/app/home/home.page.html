@@ -11,5 +11,7 @@
   <ion-item>
     <ion-input [(ngModel)]='name'></ion-input>
   </ion-item>
-  <app-beer [beer]='myFavoriteBeer'></app-beer>
+  <ng-container *ngFor="let beer of beers">
+    <app-beer [beer]="beer"></app-beer>
+  </ng-container>
 </ion-content>
