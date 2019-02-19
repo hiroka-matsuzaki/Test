@@ -1,4 +1,4 @@
-<p>
+<p [appHighlight]="beer.isNice">
   {{beer.name}} is {{beer.description}}
   <span *ngIf="beer.isNice">(((ο(*ﾟ▽ﾟ*)ο)))</span>!!
 </p>
